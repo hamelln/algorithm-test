@@ -12,6 +12,3 @@ function solution(s) {
   }
   return result;
 }
-
-const r = solution("banana");
-console.log(r);

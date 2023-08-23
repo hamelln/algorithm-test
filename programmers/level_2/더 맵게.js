@@ -68,3 +68,5 @@ function solution(scoville, K) {
   }
   return -1;
 }
+
+module.exports = solution;
