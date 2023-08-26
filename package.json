@@ -1,6 +1,19 @@
 {
   "scripts": {
-    "test": "jest --watchAll"
+    "test": "jest --watch"
+  },
+  "jest": {
+    "clearMocks": true,
+    "collectCoverage": true,
+    "verbose": true,
+    "moduleDirectories": [
+      "node_modules",
+      "<rootDir>/"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.[jt]s?(x)",
+      "**/?(*.)+(spec|test).[jt]s?(x)"
+    ]
   },
   "devDependencies": {
     "jest": "^29.6.3"
