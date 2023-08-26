@@ -22,6 +22,10 @@ function solution(n) {
   };
 
   const goUp = () => {
+    /**
+     * 어디까지 올라갈지 top index는 등차수열대로 변함
+     * 2 -> 8 -> 18 -> 32 ... => 2 * n * n
+     */
     while (i !== 2 * cycleTimes * cycleTimes) {
       i -= j;
       j--;
